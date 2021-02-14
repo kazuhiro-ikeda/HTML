@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+address {
+  font-style: normal;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+body:after {
+  /*content: url(../images/common/nav_1_on.png), url(../images/common/nav_1_on.png);
+  display: none;*/
+}
+
+/*	common
+---------------------------------*/
+body {
+  color: #333;
+  font-family: "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+  font-size: 14px;
+  word-wrap: break-word;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+@media screen and (max-width: 750px) {
+  body {
+    width: 100%;
+    font-size: 3.4vw;
+  }
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+
+@media (max-width: 750px) {
+  .image {
+    display: none;
+  }
+}
+.image.bk {
+  display: block;
+}
+@media (max-width: 750px) {
+  .image.bk {
+    display: none;
+  }
+}
+
+.image_s {
+  display: none;
+}
+@media (max-width: 750px) {
+  .image_s {
+    display: inline;
+  }
+}
+@media (max-width: 750px) {
+  .image_s.bk {
+    display: block;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+p {
+  text-align: justify;
+}
+
+.block {
+  display: block;
+}
+@media screen and (max-width: 750px) {
+  .block {
+    display: none;
+  }
+}
+
+.block_s {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .block_s {
+    display: block;
+  }
+}
+
+.inline {
+  display: inline;
+}
+@media screen and (max-width: 750px) {
+  .inline {
+    display: none;
+  }
+}
+
+.inline_s {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  .inline_s {
+    display: inline;
+  }
+}
+
+.nav_drawer {
+  display: none;
+}
+@media (max-width: 750px) {
+  .nav_drawer {
+    display: block;
+  }
+  .nav_drawer .inner {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 900;
+    padding: 0 0 5vw;
+  }
+  .nav_drawer .logo {
+    display: block;
+    width: 58vw;
+    margin: 7vw 0 0 5vw;
+  }
+}
+.nav_drawer .drawer_bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: none;
+  display: none;
+  top: 0;
+  left: 0;
+}
+.nav_drawer .drawer_button {
+  display: block;
+  border: none;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  padding: 0;
+  width: 8.4vw;
+  height: 8.4vw;
+  position: fixed;
+  top: 5vw;
+  right: 5vw;
+  z-index: 1001;
+  outline: none;
+  background-image: url(../images/common/toggle.svg);
+}
+.nav_drawer .drawer_button.active {
+  background-image: url(../images/common/toggle_close.svg);
+}
+
+/*+++ Default Navigation CSS +++*/
+.nav_drawer .drawer_nav_wrapper {
+  width: 100vw;
+  height: 100%;
+  transition: all 0.5s;
+  transform: translate(100vw);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: purple;
+  box-sizing: border-box;
+  padding: 20vw 0 0;
+}
+.nav_drawer .drawer_nav_wrapper.open {
+  transform: translate(0);
+}
+
+/*# sourceMappingURL=styles.css.map */
