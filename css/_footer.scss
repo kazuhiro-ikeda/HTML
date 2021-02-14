@@ -1,1 +1,16 @@
 @charset "utf-8";
+
+#btn_top {
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+
+    @media (max-width: $viewport) {
+        width: 6vw;
+        right: 1.5vw;
+        bottom: 7.5vw;
+    }
+
+    @include svg(50px, 70px);
+}

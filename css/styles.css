@@ -281,4 +281,28 @@ p {
   transform: translate(0);
 }
 
+#btn_top {
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+}
+@media (max-width: 750px) {
+  #btn_top {
+    width: 6vw;
+    right: 1.5vw;
+    bottom: 7.5vw;
+  }
+}
+#btn_top img {
+  width: 50px;
+  height: 70px;
+}
+@media (max-width: 750px) {
+  #btn_top img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
